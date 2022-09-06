@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(245, 245, 245);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a{
+    font-size: 20px;
+}
+
+h2{
+    padding: 2%;
+    color: rgb(10, 29, 82);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 250%;
+    text-align: center;
+
+}
+
+p{
+    color:rgb(10, 29, 82)
+}
+
+/* .flex-tienda{
+    padding: 2%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+
+.grid-tienda{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    gap: 1px;
+    justify-items: center;
+    align-items: center;
+}
+
+.imagenes-tienda{
+    width: 500px;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow:
+    0px 20px 25px -10px
+    rgba(0, 0, 0, 0.5);
+}
+
+.button {
+    background-color: rgb(0, 5, 70);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.flex-contacto{
+    bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.grid-plantel{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1px;
+    justify-items: center;
+    align-items: center;
+    }
+
+.imagenes-plantel{
+    width: 275px;
+    height: 350px;
+    border-radius: 30px;
+    box-shadow:
+    0px 20px 25px -10px
+    rgba(0, 0, 0, 0.5);
+}
+
+.logoHeader{
+    width: 50px;
+}
+
+.flex-head{
+    background-color: rgb(0, 5, 70);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.123);
+    padding: 1%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* header{
+    background-image: url("Diseño web/Entrega desafio 2/imagenes/header.png")
+} */
+
+.container-cover{
+    width: 100%;
+    height: 900px;
+    position: relative;
+    background-image: url(./imagenes/header2.jpeg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .container-cover:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 1, 46, 0.692);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-cover-info{
+    max-width: 1000px;
+    height: 600px;
+    margin: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container-cover-info h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    margin: 10px;
+}
+
+.container-cover-info p{
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(175, 8, 8);
+    margin: 10px;
+} */
+
+footer{
+    background-color: rgb(0, 5, 70);
+    height: 200px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=enviar] {
+    width: 100%;
+    background-color: rgb(0, 5, 70);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  input[type=enviar]:hover {
+    background-color: red;
+  }
+
+  /* Responsive */
+
+  @media only screen and (max-widht: 768px) {
+    
+    }
+
+  @media only screen and (max-widht: 564px) {
+    .grid-plantel{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    
+    /* .imagenes-plantel{
+        width: 275px;
+        height: 350px;
+    } */
+    }
